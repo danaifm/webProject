@@ -6,58 +6,49 @@
         <link rel="stylesheet" href="joinstyle.css">
     </head>
     <body>
-        <div class="navbar navbar-expand-lg navbar-light text-light " style="background-color: rgb(227, 217, 175) ; height: 10%; " >
-            <div class="container">
-              <!-- making the brand name as a heading -->
-                  <span class="navbar-brand mb-0 h1">
-                    <a href="bootIndex.html"><img src="logo.png" width="100" height="30" alt=""></a>
-                  </span>
-                  </div>
-                  </div>
+        <!-- expand يعني اختفاء البار متى ما صغرت الشاشه -->
+    <div class="navbar navbar-expand-lg navbar-light text-light " style="background-color: rgb(227, 217, 175) ; height: 10%; " >
+      <div class="container">
+        <!-- making the brand name as a heading -->
+            <span class="navbar-brand mb-0 h1">
+              <a href="bootIndex.html"><img src="logo.png" style="width: 35%;" alt="Logo"></a>
+            </span>
+            <!-- not workinggggggg !عرض زر عند تصغير الشاشه ومنها يتم عرض عناصر البار -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          
 
-                  <div class="join">
-                   <span class = "type" style="float: left;">
-                      <img class="images" src="undraw_baby_p4dd.svg" alt="Babysitter">
-                      <h2 class="card-title">I'm a babysitter</h2>
-                          <p class="card-text">Start searching for babysitting jobs in your area.</p>
-                          <a href="#" class="btn btn-outline-secondary btn-lg">Find jobs</a>
-                    </span>
-
-                    <span class = "type" style="float: right;">
-                      <img class="images" src="undraw_family_vg76.svg" alt="Parent">
-                      <h2 class="card-title">I'm a parent</h2>
-                          <p class="card-text">Find a trusted and professional babysitter in your area.</p>
-                          <a href="#" class="btn btn-outline-secondary btn-lg">Find care</a>
-                    </span>
-                    </div>
-
-                  <!--
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <img src="undraw_Baby_p4dd-2.png" class="card-img-top" alt="Babysitter">
-                        <div class="card-body">
-                          <h5 class="card-title">I'm a babysitter</h5>
-                          <p class="card-text">Start searching for babysitting jobs in your area.</p>
-                          <a href="#" class="btn btn-outline-secondary btn-lg">Find jobs</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <img src="undraw_family_vg76.png" class="card-img-top" alt="Parent">
-                        <div class="card-body">
-                          <h5 class="card-title">I'm a parent</h5>
-                          <p class="card-text">Find a trusted and professional babysitter in your area.</p>
-                          <a href="#" class="btn btn-outline-secondary btn-lg">Find care</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                
+          <!-- justify-content-end to make left allignment -->
+        <div class="nav justify-content-end" id="navbar">
+            <!-- list of itms in the navbar -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="bootIndex.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="joinnow.html" class="nav-link active">Join now!</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Ask us</a></li>
+            </ul>
+        </div>
+      </div>
+      </div>
 
 
-            
+    <div class = "join">
+      <h1>Let's get you started!</h1> <br>
+      
+      <span class = "type" style="float: left;">
+        <img class="images" src="undraw_baby_p4dd.svg" alt="Babysitter">
+        <h2 class="card-title">I'm a babysitter</h2>
+        <p class="card-text">Start searching for babysitting jobs in your area.</p>
+        <a href="#" class="btn btn-outline-secondary btn-lg">Find jobs</a>
+      </span>
+
+      <span class = "type" style="float: right;">
+        <img class="images" src="undraw_family_vg76.svg" alt="Parent">
+        <h2 class="card-title">I'm a parent</h2>
+        <p class="card-text">Find a trusted and professional babysitter in your area.</p>
+        <a href="#" class="btn btn-outline-secondary btn-lg">Find care</a>
+        </span>
+    </div>
     </body>
 </html>
