@@ -2,12 +2,13 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-artem-podrez-6951550.jpg");
-  height: 60%;
+#hero-image-homePage  {
+  /* hero image from https://www.pexels.com/ */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-ivan-samkov-8504293.jpg"); 
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,25 +16,50 @@ body, html {
   margin-bottom: 80px;
 }
 
+#hero-image-parentHome  {
+    /* hero image from https://www.pexels.com/ */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-artem-podrez-6951550.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#hero-image-babysitterHome  {
+    /* hero image from https://www.pexels.com/ */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-vlada-karpovich-4617294.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+
 .hero-text {
   text-align: center;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
-.hero-text button {
+.hero-text .btn {
   border: none;
-  border-radius: 7px;
+  border-radius: 30px;
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
   color: black;
-  background-color: #ddd;
+  background-color: rgb(207, 198, 198);
   text-align: center;
   cursor: pointer;
+  margin: 4px;
+  font-size: 20px;
 }
 
 .hero-text button:hover {
@@ -42,13 +68,17 @@ body, html {
   transition: 0.3s;
 }
 
+#navbar {
+  padding-left: 20px;
+}
+
 
 img {
   margin:0;
   width: 120%;
 }
 
-.image {  
+.image {
   flex-basis: 50%
 }
 
@@ -59,10 +89,12 @@ img {
   text-align: center;
   padding-top: 150px;
   position: absolute;
+  
 }
 
 .container.text-center {
-  margin-bottom: 60px;
+  margin-top: 130px;
+  margin-bottom: 130px;
 }
 
 .safety {
@@ -83,7 +115,7 @@ img {
   left:50%;
   bottom: 20px;
   transform: translate(-50%, -50%);
-  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .footer a {
@@ -96,4 +128,3 @@ img {
   color:#555;
   transition: 0.3s;
 }
-
