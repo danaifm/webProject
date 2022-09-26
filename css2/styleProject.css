@@ -5,37 +5,28 @@ body, html {
 
 }
 
-#hero-image-homePage  {
+.hero {
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#home.hero {
   /* hero image from https://www.pexels.com/ */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-ivan-samkov-8504293.jpg"); 
-  height: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 80px;
 }
 
-#hero-image-parentHome  {
-    /* hero image from https://www.pexels.com/ */
+#parent.hero {
+   /* hero image from https://www.pexels.com/ */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-artem-podrez-6951550.jpg");
-  height: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 80px;
 }
 
-#hero-image-babysitterHome  {
-    /* hero image from https://www.pexels.com/ */
+#sitter.hero {
+  /* hero image from https://www.pexels.com/ */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("pexels-vlada-karpovich-4617294.jpg");
-  height: 70%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-bottom: 80px;
 }
 
 
@@ -67,11 +58,6 @@ body, html {
   color: white;
   transition: 0.3s;
 }
-
-#navbar {
-  padding-left: 20px;
-}
-
 
 img {
   margin:0;
@@ -111,7 +97,6 @@ img {
   padding-top: 50px;
   padding-bottom: 10px;
   position: relative;
-  bottom: 0px;
   left:50%;
   bottom: 20px;
   transform: translate(-50%, -50%);
