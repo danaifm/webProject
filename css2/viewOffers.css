@@ -12,7 +12,8 @@ article {
     color:  #555;
     border-radius: 7px;
     margin-bottom: 3%;
-    display: inline-block;
+    display: inline-block
+    
 }
 
 .requestName {
@@ -30,6 +31,7 @@ article {
     border-radius: 7px; 
     float: left;
     margin-right: 3%;
+    border-radius: 70px;
 }
 
 a {
@@ -47,13 +49,13 @@ a {
     bottom: 0px;
     transform: translate(-50%, -50%);
   }
-  
+
   .footer a {
     text-decoration: none;
     font-size: small;
     color:rgb(155, 155, 129)
   }
-  
+
   .footer a:hover {
     color:#555;
     transition: 0.3s;
@@ -70,3 +72,33 @@ a {
     border-radius: 30px;
   }
 
+  .ratings{
+    margin-right:10px;
+    margin-bottom: 1%;
+    margin-left: 3%; 
+    /* to make the stars more to the left */
+}
+
+.ratings i{
+
+    color:#cecece;
+    font-size:25px;
+   
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+article {
+  margin-left: 5%;
+  border-radius: 50px;
+}
+
+.modal-body img{
+  width: 250px;
+  float: left;
+  margin-right: 5%;
+  margin-left: 8%;
+  border-radius: 120px;
+ }
