@@ -6,7 +6,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel ="stylesheet" href="request.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- including time picker  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="dist/timepicker.min.css">
     <title>Jalees</title>
 </head>
 
@@ -63,34 +67,59 @@
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example1c"><strong>Kid/s name</strong></label>
                           <input type="names" id="form3Example1c" class="form-control" />
-                          <label class="form-label" for="form3Example1c">Kid/s name</label>
                         </div>
                       </div>
 
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
+                          <label class="form-label" for="form3Example3c"> <strong> Kid/s ages </strong></label>
                           <input type="ages" id="form3Example3c" class="form-control" />
-                          <label class="form-label" for="form3Example3c">Kid/s ages</label>
                         </div>
                       </div>
 
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="type" id="form3Example4c" class="form-control" />
-                          <label class="form-label" for="form3Example4c">Type of service</label>
+                          <label class="form-label" for="form3Example4c"><strong>Type of service </strong></label>
+                          <input type="type" id="form3Example4c" class="form-control" placeholder="ex:infant babysitting,help in Homeworks " />
                         </div>
                       </div>
 
                       <div class="d-flex flex-row align-items-center mb-4">
                         <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                         <div class="form-outline flex-fill mb-0">
-                          <input type="Duration" id="form3Example4cd" class="form-control" />
-                          <label class="form-label" for="form3Example4cd">Duration</label>
-                        </div>
-                      </div>
+                          <!-- date picker -->
+                          <label class="form-label" for="form3Example4cd"> <strong>Start Day </strong></label><br>
+                      <input id="flatpickr" id="form3Example4c" class="form-control"><br>
+                      <script>
+                      var example = flatpickr('#flatpickr');
+                    </script>
+                    <label class="form-label" for="form3Example4cd"> <strong>End Day </strong></label><br>
+                    <input id="flatpickr" id="form3Example4c" class="form-control"><br>
+                    <script>
+                    var example = flatpickr('#flatpickr');
+                  </script>
+
+                       <!-- time picker -->
+                       <label for="appt"> <strong> start time:</strong></label><br>
+                       <input type="time" id="appt" name="appt" class="form-control"><br>
+
+                       <label for="appt"> <strong> end time:</strong></label><br>
+                       <input type="time" id="appt" name="appt" class="form-control">
+
+                    
+
+
+
+
+                    </div>
+                  </div>
+                     
+                     
+                    
 
                       <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                         <button type="button" class="btn btn-outline-secondary btn-lg">Post Request</button>
@@ -114,6 +143,8 @@
     </div> 
 
     <p class="footer">Jalees &copy; <a href="mailto:Jalees@gmail.com">Contact Us</a></p>
+    <script src="dist/timepicker.min.js"></script>
+
 
 </body>
 
