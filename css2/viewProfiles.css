@@ -67,6 +67,8 @@
     margin-left: 15%;
     border-radius: 50px;
     border-style:dotted;
+    border-color: rgb(223, 203, 173);
+    border-width : 5px;
 
 }
 
