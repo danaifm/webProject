@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel ="stylesheet" href="BabysitterJobs.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Jalees</title>
+     
+    </head>
+
+    <body>
+
+        <!-- expand يعني اختفاء البار متى ما صغرت الشاشه -->
+        <div class="navbar navbar-expand-lg navbar-light text-light " style="background-color: rgb(227, 217, 175);">
+            <div class="container-fluid">
+              <!-- making the brand name as a heading -->
+              <a class="navbar-brand mb-0 h1" href="parentHome.html"><img src="logo.png" style="width: 35%;" alt="Logo"></a>
+                  <!--عرض زر عند تصغير الشاشه ومنها يتم عرض عناصر البار -->
+                  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#cNav" aria-controls="cNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+            
+                <!-- justify-content-end to make left allignment -->
+              <div class="collapse navbar-collapse" id="cNav">
+                  <!-- list of itms in the navbar -->
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a href="parentHome.html" class="nav-link">Home</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">My Bookings</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="viewRequests.html">Current Bookings</a></li>
+                          <li><a class="dropdown-item" href="#">Previous Bookings</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">My Profile</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Manage Profile</a></li>
+                          <li><a class="dropdown-item" href="bootIndex.html">Log Out</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item " ><a href="#" class="nav-link ">Ask Us</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+
+
+        <h1 style=" text-align: center; margin-top: 3%;"> My Previous Jobs </h1>
+        <div class = "jobs" >
+            <article>
+                <a href = "#"><img class="parentPicture" src = "woman4.png" alt="Profile Picture"></a>
+                <h4 class = "parentName"><strong>Parent's name:</strong> Rama Fahad </h4> 
+
+                <P>
+                    <strong>Kid's name:</strong> Abdullah Fahad <br>
+                    <strong>Kid's age:</strong> 9 years old <br>
+                    <strong>Type of service:</strong> English lessons  <br>
+                    <strong>Start date - End date:</strong> 2022/3/5 - 2022/3/25 <br>
+                    <strong>Duration:</strong> 6-8 PM 
+                </p>
+
+            </article>
+
+            <article>
+                <a href = "#"><img class="parentPicture" src = "man2.png" alt="Profile Picture"></a>
+                <h4 class = "parentName"><strong>Parent's name:</strong> Hamad Ali </h4> 
+
+                <P>
+                    <strong>Kid's name:</strong> Salman Ali <br>
+                    <strong>Kid's age:</strong> 9 years old <br>
+                    <strong>Type of service:</strong> Help with homeworks  <br>
+                    <strong>Start date - End date:</strong> 2022/4/1 - 2022/4/21 <br>
+                    <strong>Duration:</strong> 3-5 PM 
+                </p>
+
+            </article>
+
+            <article>
+                <a href = "#"><img class="parentPicture" src = "man3.png" alt="Profile Picture"></a>
+                <h4 class = "parentName"><strong>Parent's name:</strong> Bader Abdulaziz  </h4> 
+
+                <P>
+                    <strong>Kid's name:</strong> Dana Abdulaziz <br>
+                    <strong>Kid's age:</strong> 4 years old <br>
+                    <strong>Type of service:</strong> Babysitting while her father is at work  <br>
+                    <strong>Start date - End date:</strong> 2022/4/25 - 2022/5/15 <br>
+                    <strong>Duration:</strong> 7-12 PM 
+                </p>
+
+            </article>
+        </div>
+
+
+
+        <p class="footer">Jalees &copy;
+            <a href="mailto:Jalees@gmail.com">Contact Us</a>
+        </p>
+    
+
+    </body>
+</html>
