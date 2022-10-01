@@ -37,3 +37,16 @@
     margin-top: 15px;
     display: inline-block;
 }
+.modal-body img {
+    width: 50%;
+    height: 50%;
+    border-radius: 0;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    
+}
+
+.modal-body h4 {
+    text-align: center;
+    margin: 5%;
+}
